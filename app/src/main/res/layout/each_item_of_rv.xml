@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="22dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="210dp"
+        android:layout_height="190dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/popularImg"
+            android:layout_width="match_parent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/pizza_sample" />
+        <ImageView
+            android:id="@+id/imgGradient"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/image_btm_overlay">
+
+        </ImageView>
+        <TextView
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsbold"
+            android:id="@+id/popularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_gravity="bottom"
+            android:paddingBottom="22dp"
+            android:text="Pizza made with hot cheesy dip is very tasty">
+
+        </TextView>
+        <TextView
+            android:id="@+id/popularTime"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinslight"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="11sp"
+            android:layout_marginBottom="5dp"
+            android:text="⌚ 22 min"
+            android:maxLength="8"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
